@@ -1,9 +1,8 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  font-family: Gotham Rounded;
+:root {
+  --correctAns: #14c234;
+  --wrongAns: #FF0000;
 }
 
-/* CSS */
 *, *::before, *::after {
   box-sizing: border-box;
   font-family: Gotham Rounded;
@@ -18,4 +17,24 @@ body {
   justify-content: center;
   align-items: center;
   background-color: darkblue;
+}
+
+.container {
+  width: 80%;
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.788);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  border: 1px solid white;
+  background-color: #14c234;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: block;
+  width: 100%;
+  color: white;
+  outline: none;
 }
