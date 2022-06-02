@@ -33,3 +33,18 @@ const questions = [
   },
 ]
 
+function start() {
+  start.addEventListener('click', () => {
+    curr_num = 0;
+    question_container.classList.remove('hide')
+    start.classList.add('hide')
+    shuffle = questions.sort(() => Math.random() - .5)
+    nextQuestion();
+  })
+  console.log("Quiz has been started");
+}
+start()
+
+function nextQuestion() {
+
+}
