@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Outfit:wght@300&family=Red+Hat+Text&display=swap');
+
 :root {
   --correctAns: #14c234;
   --wrongAns: #ff0000;
@@ -7,7 +9,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: Gotham Rounded;
+  font-family: 'Outfit', sans-serif;
 }
 
 body {
