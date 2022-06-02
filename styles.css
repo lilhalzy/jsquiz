@@ -1,9 +1,11 @@
 :root {
   --correctAns: #14c234;
-  --wrongAns: #FF0000;
+  --wrongAns: #ff0000;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: Gotham Rounded;
 }
@@ -37,4 +39,30 @@ body {
   width: 100%;
   color: white;
   outline: none;
+}
+
+.btn:last-child {
+  margin-bottom: 20px;
+}
+.btn:hover {
+  background-color: purple;
+}
+
+.start_btn,
+.next_btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: var(--correctAns);
+}
+
+.wrong {
+  background-color: var(--wrongAns);
 }
