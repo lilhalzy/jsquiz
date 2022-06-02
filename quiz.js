@@ -33,4 +33,3 @@ const questions = [
   },
 ]
 
-const array = ["2, 3", "3"]
