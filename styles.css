@@ -65,6 +65,6 @@ body {
   background-color: var(--correctAns);
 }
 
-.wrong {
+.incorrect {
   background-color: var(--wrongAns);
 }
