@@ -80,8 +80,18 @@ function select_answer(e) {
   }
 }
 
-function Changebackground() {
+function Changebackground(element, correct) {
+  clear(element)
+  if(correct) {
+    element.classList.add('correct')
+  } else {
+    element.classList.add('incorrect')
+  }
+}
 
+function clear(element) {
+  element.classList.remove('correct')
+  element.classList.remove('incorrect')
 }
 
 function reset() {
