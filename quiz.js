@@ -46,6 +46,7 @@ function start_quiz() {
 start_quiz()
 
 function nextQuestion() {
+  reset()
   ShowQuestion(shuffle[curr_num]);
 }
 
@@ -55,5 +56,15 @@ function ShowQuestion(question_parameter) {
     const button = document.createElement('button')
     button.innerHTML = answer_parameter.text;
     button.classList.add('btn')
+    answers.appendChild(button)
+    button.addEventListener('click', select_answer)
   })
+}
+
+function select_answer(e) {
+
+}
+
+function reset() {
+
 }
