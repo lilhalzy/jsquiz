@@ -33,7 +33,7 @@ const questions = [
   },
 ]
 
-function start() {
+function start_quiz() {
   start.addEventListener('click', () => {
     curr_num = 0;
     question_container.classList.remove('hide')
@@ -43,8 +43,17 @@ function start() {
   })
   console.log("Quiz has been started");
 }
-start()
+start_quiz()
 
 function nextQuestion() {
+  ShowQuestion(shuffle[curr_num]);
+}
 
+function ShowQuestion(question_parameter) {
+  question_printed.textContent = question_parameter.question;
+  question_parameter.answers.forEach(answer_parameter => {
+    const button = document.createElement('button')
+    button.innerHTML = answer_parameter.text;
+    button.classList.add('btn')
+  })
 }
