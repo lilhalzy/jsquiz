@@ -56,15 +56,38 @@ function ShowQuestion(question_parameter) {
     const button = document.createElement('button')
     button.innerHTML = answer_parameter.text;
     button.classList.add('btn')
+    if (answer_parameter.correct) {
+      button.dataset.correct = answer_parameter.correct
+    }
     answers.appendChild(button)
     button.addEventListener('click', select_answer)
   })
 }
 
 function select_answer(e) {
+  const selected_answer = e.target;
+  const correct = selected_answer.dataset.correct
+  // Giving background according to the answer
+  Changebackground(document.body, correct)
+  // End of the questions
+  if(shuffle.length - 1 > curr_num) {
+    next.classList.remove('hide')
+  } else {
+  question_printed = ''
+  answers.innerHTML = ''
+  start.innerHTML = 'Restart'
+  start.classList.remove('hide')
+  }
+}
+
+function Changebackground() {
 
 }
 
 function reset() {
 
 }
+
+// Index2.html
+const id = document.getElementById('id')
+id.textContent = id.dataset.parent
