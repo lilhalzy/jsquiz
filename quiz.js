@@ -94,6 +94,13 @@ function clear(element) {
   element.classList.remove('incorrect')
 }
 
+
+next.addEventListener('click', () => {
+curr_num++;
+reset()
+ShowQuestion(shuffle[curr_num])
+})
+
 function reset() {
 
 }
