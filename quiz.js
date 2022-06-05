@@ -102,7 +102,11 @@ ShowQuestion(shuffle[curr_num])
 })
 
 function reset() {
-
+next.classList.add('hide')
+answers.textContent = ''
+question_printed.textContent = ''
+body.classList.remove('correct')
+body.classList.remove('incorrect')
 }
 
 // Index2.html
